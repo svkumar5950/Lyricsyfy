@@ -1,2 +1,3 @@
-# spootify
-Practicing to Spoof 
+# Lyricsyfy
+Exploring Lyrics API with MusixMatch 
+&& React Context Api
