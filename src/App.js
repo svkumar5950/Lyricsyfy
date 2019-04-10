@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "./store/Content";
 import Header from "./layouts/Header";
-import Home from "./components/Home";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import Home from "./components/Home/Home";
+import "./App.scss";
 
 class App extends Component {
   render() {
