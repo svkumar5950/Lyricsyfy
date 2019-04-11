@@ -31,7 +31,10 @@ export default class LyricsContent extends Component {
             <i className="fas fa-angle-double-left" />
           </Link>
         </button>
-        <p>{lyrics_body}</p>
+        <p>
+          {lyrics_body}
+          <span>Sorry !!!, You can get only 30% of Lyrics</span>
+        </p>
       </div>
     );
   }

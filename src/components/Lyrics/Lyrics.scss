@@ -25,5 +25,11 @@ $font-text: "Noto Sans", sans-serif;
     text-align: center;
     color: $main-bc-color;
     font-family: $font-text;
+    line-height: 4vh;
+    span {
+      display: block;
+      color: $font-color;
+      font-size: 28px;
+    }
   }
 }
