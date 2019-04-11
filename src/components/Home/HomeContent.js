@@ -24,7 +24,7 @@ function HomeContent(props) {
         )}
       </span>
       <button>
-        <Link to={`/top_songs/${track_id}`}>
+        <Link to={`/Lyricsyfy/top_songs/${track_id}`}>
           <i className="fab fa-readme" />
           Lyrics
         </Link>

@@ -15,8 +15,8 @@ class App extends Component {
           <div className="App">
             <Header />
             <Search />
-            <Route exact path="/" component={Home} />
-            <Route path="/top_songs/:id" component={LyricsContent} />
+            <Route exact path="/Lyricsyfy" component={Home} />
+            <Route path="/Lyricsyfy/top_songs/:id" component={LyricsContent} />
           </div>
         </Router>
       </Provider>

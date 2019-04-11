@@ -27,7 +27,7 @@ export default class LyricsContent extends Component {
     ) : (
       <div className="app-lyricsComponent">
         <button>
-          <Link to="/">
+          <Link to="/Lyricsyfy">
             <i className="fas fa-angle-double-left" />
           </Link>
         </button>
