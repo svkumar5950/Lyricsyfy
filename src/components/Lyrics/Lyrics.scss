@@ -1,0 +1,29 @@
+$main-bc-color: #fff;
+$font-color: #e2474b;
+$accend-color: #406d96;
+$add-bc-color: #1c1f33;
+$font-header: "Arvo", serif;
+$font-text: "Noto Sans", sans-serif;
+
+.app-lyricsComponent {
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid $accend-color;
+  padding: 5px;
+  background-color: $add-bc-color;
+  button {
+    margin-left: 3vw;
+    background-color: transparent;
+    border-style: none;
+    i {
+      color: $font-color;
+      font-size: 30px;
+    }
+  }
+  p {
+    text-align: center;
+    color: $main-bc-color;
+    font-family: $font-text;
+  }
+}

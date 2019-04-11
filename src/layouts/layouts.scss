@@ -1,27 +1,31 @@
 // App layouts Stylling
 
+$main-bc-color: #fff;
+$font-color: #e2474b;
+$accend-color: #406d96;
+$font-header: "Arvo", serif;
+$font-text: "Noto Sans", sans-serif;
 // 1 . App- Header Component
 // Styling for all the elements in Header Component
 
 .app-header {
-  position: fixed;
   top: 0;
   h1.app-header-brand {
-    background-color: rgb(51, 185, 185);
+    background-color: $main-bc-color;
     position: relative;
     width: 100vw;
     text-align: center;
     margin: 0;
     i {
-      color: #6d4c41;
+      color: $font-color;
       margin: 2vh 3vw;
     }
     a {
-      color: #6d4c41;
+      color: $font-color;
+      font-family: $font-header;
     }
   }
   .menu-wrap {
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -58,7 +62,7 @@
     flex: none;
     width: 100%;
     height: 3px;
-    background: #6d4c41;
+    background: $font-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,7 +132,7 @@
   }
 
   .menu-wrap .menu > div {
-    background: #ccc;
+    background: $main-bc-color;
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
@@ -150,16 +154,48 @@
 
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: #6d4c41;
+    color: $font-color;
     font-size: 1.5rem;
     padding: 1rem;
   }
 
   .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
+    font-family: $font-header;
     text-decoration: none;
     transition: color 0.4s ease;
   }
+}
 
-  // App- Header - navLinks Component
+// Stlling for Loader Component
+
+lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vh;
+  margin: 25vh auto;
+  border: 26px solid $font-color;
+  border-color: $accend-color transparent $font-color transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
 }

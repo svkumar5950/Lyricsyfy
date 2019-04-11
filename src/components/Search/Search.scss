@@ -1,0 +1,61 @@
+// App layouts Stylling
+
+$main-bc-color: #fff;
+$font-color: #e2474b;
+$accend-color: #406d96;
+$font-header: "Arvo", serif;
+$font-text: "Noto Sans", sans-serif;
+
+.app-searchbar {
+  max-width: 100%;
+  width: 90%;
+  margin: 2vh auto;
+  padding: 10px;
+  border-radius: 5px;
+  h1 {
+    text-align: center;
+    color: $accend-color;
+    font-family: $font-header;
+  }
+  form {
+    input {
+      display: block;
+      height: 3vh;
+      border-radius: 5px;
+      border: 2px solid $accend-color;
+      margin-top: 1vh;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 100%;
+    }
+    input[type="submit"] {
+      max-width: 100%;
+      width: 60%;
+      margin: 2vh auto;
+      background-color: $font-color;
+      color: $main-bc-color;
+      font-size: 18px;
+    }
+  }
+}
+// Media Query
+@media (min-width: 800px) {
+  .app-searchbar {
+    form {
+      margin: 0 auto;
+      input {
+        height: 4vh;
+      }
+
+      input[type="text"] {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      input[type="submit"] {
+        width: 20%;
+      }
+    }
+  }
+}

@@ -1,7 +1,81 @@
-.app-homeContent {
-  margin-top: 10vh;
-  justify-content: center;
+// App layouts Stylling
+
+$main-bc-color: #fff;
+$font-color: #e2474b;
+$accend-color: #406d96;
+$add-bc-color: #1c1f33;
+$font-header: "Arvo", serif;
+$font-text: "Noto Sans", sans-serif;
+
+.header {
+  text-align: center;
+  font-family: $font-header;
+  color: $accend-color;
+}
+.app-home {
   display: flex;
-  border: 2px solid #6d4c41;
-  //padding: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.app-homeContent {
+  flex-basis: 80%;
+  margin-top: 1.2vh;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid $accend-color;
+  background-color: $add-bc-color;
+  align-self: center;
+
+  h2 {
+    color: $main-bc-color;
+    font-family: $font-header;
+    font-size: 18px;
+    i {
+      color: $font-color;
+    }
+  }
+  h2,
+  h3,
+  h5 {
+    color: $main-bc-color;
+    font-family: $font-text;
+    margin: 3px;
+  }
+  span {
+    i {
+      color: $accend-color;
+    }
+  }
+  button {
+    background-color: $font-color;
+    display: block;
+    max-width: 100%;
+    width: 80%;
+    height: 3vh;
+    margin: 0 auto;
+    border-style: none;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    i {
+      color: #fff;
+      margin-right: 2vw;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+
+// Media Query
+@media (min-width: 600px) {
+  .app-homeContent {
+    flex-basis: 45%;
+  }
+}
+@media (min-width: 900px) {
+  .app-homeContent {
+    flex-basis: 30%;
+  }
 }
